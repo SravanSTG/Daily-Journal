@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+
+  <h1> <%= title %> </h1>
+  <p> <%= content %> </p>
+
+  <form class="" action="/delete" method="post">
+    <button type="submit" class="del-post" name="deletedPost" value="<%= _id %>" onChange="this.form.submit()">DELETE</button>
+  </form>
+
+  <a class="back-home" href="/">BACK TO HOME</a>
+
+<%- include("partials/footer") %>
